@@ -23,15 +23,15 @@
 
     <h1 id="top" class="tl" style="text-align: center">Livre du joueur de Traître-Lame</h1>
     <div ng-repeat="manual_sect_1 in manual">
-      <h1 id="{{! formatAnchor(manual_sect_1.title) }}" ng-bind-html="manual_sect_1.title"></h1>
+      <h1 id="{{! formatAnchor(manual_sect_1.title) }}" ng-bind-html="getTitleHtml(manual_sect_1)"></h1>
       <p ng-bind-html="formatHtmlDescription(manual_sect_1.description)"></p>
 
       <div ng-repeat="manual_sect_2 in manual_sect_1.section">
-        <h2 id="{{! formatAnchor(manual_sect_2.title) }}" ng-bind-html="manual_sect_2.title"></h2>
+        <h2 id="{{! formatAnchor(manual_sect_2.title) }}" ng-bind-html="getTitleHtml(manual_sect_2)"></h2>
         <p ng-bind-html="formatHtmlDescription(manual_sect_2.description)"></p>
 
         <div ng-repeat="manual_sect_3 in manual_sect_2.section">
-          <h3 id="{{! formatAnchor(manual_sect_3.title) }}" ng-bind-html="manual_sect_3.title"></h3>
+          <h3 id="{{! formatAnchor(manual_sect_3.title) }}" ng-bind-html="getTitleHtml(manual_sect_3)"></h3>
           <p ng-bind-html="formatHtmlDescription(manual_sect_3.description)"></p>
         </div>
       </div>
@@ -39,84 +39,8 @@
 
     <hr>
 
-    <h1 id="habitech">Habiletés et techniques <a target="_self" href="#techmaitre" class="btn btn-default">Technique de Maitre <span class="glyphicon glyphicon-star-empty"></span></a></h1>
-    <p>Les habiletés déterminent les possibilités d’un personnage en jeu. Chaque joueur peut puiser ses habiletés parmi cinq disciplines : commune, combattante, sournoise, magique et
-      professionnelle.</p>
-    <p>Chaque habileté donne accès à 5 techniques selon deux modèles :</p>
-    <h3>Linéaire [l]</h3>
-    <p>Les techniques sont acquises dans l’ordre présenté. Elles ont une progression numérique régulière affectant une statistique ou une production précise.</p>
-    <h3>Choix [c]</h3>
-    <p>Chaque point d’expérience investi dans l’habileté permet de choisir une technique parmi les 5. </p>
-    <p>Les techniques représentent les possibilités du joueur en jeu. L’usage d’une technique coute toujours 1 d’énergie. Ceci inclus, mais n’est pas limité à, l’usage d’une sauvegarde, la production
-      d’un objet, annoncer une technique, mais rater sa cible, faire usage d’un rituel ou désarmer un piège. </p>
-    <h3>Légende</h3>
-    <li>[Production] génère 4 blocs de production du nom de la technique à chaque jeu.
-    <li>[Touche] frappe avec une arme à l’endroit précisé.
-    <li>[Dague] frappe avec une arme de mêlée de moins de 60 cm.
-    <li>[Sauvegarde] contre l’effet spécifié. Le joueur doit dire le mot « sauvegarde ».
-    <li>[Touché] main libre touche la cible.
-    <li>[Balle] main libre, arme de bois ou une balle touche la cible.
-    <li>[Passif] toujours active, ne nécessitant pas d’énergie ou d’activation.
-    <li>[Toxine] il est nécessaire d’appliquer une toxine sur sa lame pour utiliser l’habileté.
-      <h2 id="discom">Discipline commune</h2>
-      <h3>Endurance [l]</h3>
-    <li> +1 point de vie maximum
-    <li> +1 point de vie maximum
-    <li> +1 point de vie maximum
-      <h3>Énergie [l]</h3>
-    <li> +2 points d’énergie maximum
-    <li> +2 points d’énergie maximum
-    <li> +2 points d’énergie maximum
-      <h2 id="discomb">Discipline combattante</h2>
-      <h3>Discipline [c]</h3>
-    <li> Résilience [passif] n’a pas à simuler la douleur en combat
-    <li> Endurcie [passif] peur est remplacé par foudroyé
-    <li> Loyauté [passif] sous domination, peut refuser de trahir sa faction
-    <li> Doctrine [passif] choisit une cible qu’il peut atteindre en mêlée lorsqu’enragé
-    <li> Vigilance [pointe la cible et attends 5 secondes] perce l’effet caché
-      <h3>Karma [l]</h3>
-    <li> +2 points de karma au début du jeu
-    <li> +2 points de karma au début du jeu
-    <li> +2 points de karma au début du jeu
-    <li> +2 points de karma au début du jeu
-    <li> +2 points de karma au début du jeu
-      <h3>Offense [c]</h3>
-    <li> Assaut [touche au torse] +1 dégât physique
-    <li> Jambette [touche à la jambe] foudroyée
-    <li> Désarmement [touche à l’avant-bras] désarmé
-    <li> Coupe-souffle [touche au ventre] muet
-    <li> Charge [après une course de 3 pas] +1 dégât physique
-      <h3>Défense [c]</h3>
-    <li> Esquive [sauvegarde] foudroyé
-    <li> Déflexion [sauvegarde] désarmé
-    <li> Déviation [sauvegarde] démembré
-    <li> Santé [sauvegarde] nécrose
-    <li> Second Souffle [sauvegarde] assommé (sauf si à 0 point de vie)
-      <h2 id="dissou">Discipline sournoise</h2>
-      <h3>Alchimie [l]</h3>
-    <li> Alchimie [production] poison, toxine et venin
-    <li> +2 blocs de production alchimique
-    <li> +2 blocs de production alchimique
-    <li> +2 blocs de production alchimique
-    <li> +2 blocs de production alchimique
-      <h3>Embuscade [c]</h3>
-    <li> Camouflage [immobile] peut se cacher en forêt
-    <li> Dissimulation [immobile] peut se cacher dans le noir
-    <li> Capture [avec une corde] la cible ne peut faire usage d’évasion
-    <li> Piège [attacher les deux extrémités du piège] permet de poser un piège
-    <li> Aveuglement [Toxine, Dague au torse] aveuglé
-      <h3>Fourberie [c]</h3>
-    <li> Attaque sournoise [touche au dos] +1 de dégât physique. Cumulatif avec venin.
-    <li> Coup bas [Toxine, Dague à un rein] paralysé 5 secondes
-    <li> Coup sonnant [Toxine, Dague entre les omoplates] assommé
-    <li> Coupe-jarret [Dague derrière la jambe] démembré
-    <li> Stylet [Dague à la main] démembré.
-      <h3>Travail de précision [c]</h3>
-    <li> Serrurier [touché, 30 secondes] ouvre un cadenas
-    <li> Évasion [30 secondes sans bouger ou être touché, sauvegarde] paralysé
-    <li> Désamorçage [touché, 30 secondes] désarme et détruit un piège
-    <li> Torture [touché, 30 secondes] doit répondre à une question (pas un effet de vérité)
-    <li> Vol à la tire : place un objet sans être vu dans une poche. Peut prendre le contenu de la poche ou y déposer un objet au choix.
+    <h1 id="habitech">Habiletés et techniques</h1>
+
       <h2 id="dismag">Discipline magique</h2>
       <h3>Artisanat Arcane [c]</h3>
     <li> Mixture de potions [production] potions

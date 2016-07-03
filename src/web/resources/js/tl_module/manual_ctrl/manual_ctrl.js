@@ -15,6 +15,13 @@ characterApp.controller("manual_ctrl", ["$scope", "$q", "$http", "$window", /*"$
     return title.replace(/\s+/g, '');
   };
 
+  $scope.getTitleHtml = function (obj) {
+    if ("title_html" in obj) {
+      return obj["title_html"];
+    }
+    return obj["title"];
+  };
+
   $scope.formatHtmlDescription = function (desc) {
     // format html from string or array
     var response;

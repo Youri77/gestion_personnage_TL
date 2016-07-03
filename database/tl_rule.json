@@ -105,15 +105,158 @@
     },
     {
       "title": "Habiletés et Techniques",
+      "title_html": "Habiletés et techniques <a target=\"_self\" href=\"#techmaitre\" class=\"btn btn-default\">Technique de Maitre <span class=\"glyphicon glyphicon-star-empty\"></span></a>",
+      "description": [
+        "Les habiletés déterminent les possibilités d’un personnage en jeu. Chaque joueur peut puiser ses habiletés parmi cinq disciplines : commune, combattante, sournoise, magique et professionnelle.",
+        "Chaque habileté donne accès à 5 techniques selon deux modèles :",
+        "<h3>Linéaire [l]</h3>",
+        "Les techniques sont acquises dans l’ordre présenté. Elles ont une progression numérique régulière affectant une statistique ou une production précise.",
+        "<h3>Choix [c]</h3>",
+        "Chaque point d’expérience investi dans l’habileté permet de choisir une technique parmi les 5.",
+        "Les techniques représentent les possibilités du joueur en jeu. L’usage d’une technique coute toujours 1 d’énergie. Ceci inclus, mais n’est pas limité à, l’usage d’une sauvegarde, la production d’un objet, annoncer une technique, mais rater sa cible, faire usage d’un rituel ou désarmer un piège.",
+        "<h3>Légende</h3>",
+        [
+          "[Production] génère 4 blocs de production du nom de la technique à chaque jeu.",
+          "[Touche] frappe avec une arme à l’endroit précisé.",
+          "[Dague] frappe avec une arme de mêlée de moins de 60 cm.",
+          "[Sauvegarde] contre l’effet spécifié. Le joueur doit dire le mot «sauvegarde».",
+          "[Touché] main libre touche la cible.",
+          "[Balle] main libre, arme de bois ou une balle touche la cible.",
+          "[Passif] toujours active, ne nécessitant pas d’énergie ou d’activation.",
+          "[Toxine] il est nécessaire d’appliquer une toxine sur sa lame pour utiliser l’habileté."
+        ]
+      ],
       "section": [
         {
-          "title": "Discipline Commune"
+          "title": "Discipline Commune",
+          "section": [
+            {
+              "title": "Endurance [l]",
+              "description": [
+                [
+                  "+1 point de vie maximum",
+                  "+1 point de vie maximum",
+                  "+1 point de vie maximum"
+                ]
+              ]
+            },
+            {
+              "title": "Énergie [l]",
+              "description": [
+                [
+                  "+2 points d’énergie maximum",
+                  "+2 points d’énergie maximum",
+                  "+2 points d’énergie maximum"
+                ]
+              ]
+            }
+          ]
         },
         {
-          "title": "Discipline Combattante"
+          "title": "Discipline Combattante",
+          "section": [
+            {
+              "title": "Discipline [c]",
+              "description": [
+                [
+                  "Résilience [passif] n’a pas à simuler la douleur en combat",
+                  "Endurcie [passif] peur est remplacé par foudroyé",
+                  "Loyauté [passif] sous domination, peut refuser de trahir sa faction",
+                  "Doctrine [passif] choisit une cible qu’il peut atteindre en mêlée lorsqu’enragé",
+                  "Vigilance [pointe la cible et attends 5 secondes] perce l’effet caché"
+                ]
+              ]
+            },
+            {
+              "title": "Karma [l]",
+              "description": [
+                [
+                  "+2 points de karma au début du jeu",
+                  "+2 points de karma au début du jeu",
+                  "+2 points de karma au début du jeu",
+                  "+2 points de karma au début du jeu",
+                  "+2 points de karma au début du jeu"
+                ]
+              ]
+            },
+            {
+              "title": "Offense [c]",
+              "description": [
+                [
+                  "Assaut [touche au torse] +1 dégât physique",
+                  "Jambette [touche à la jambe] foudroyée",
+                  "Désarmement [touche à l’avant-bras] désarmé",
+                  "Coupe-souffle [touche au ventre] muet",
+                  "Charge [après une course de 3 pas] +1 dégât physique"
+                ]
+              ]
+            },
+            {
+              "title": "Défense [c]",
+              "description": [
+                [
+                  "Esquive [sauvegarde] foudroyé",
+                  "Déflexion [sauvegarde] désarmé",
+                  "Déviation [sauvegarde] démembré",
+                  "Santé [sauvegarde] nécrose",
+                  "Second Souffle [sauvegarde] assommé (sauf si à 0 point de vie)"
+                ]
+              ]
+            }
+          ]
         },
         {
-          "title": "Discipline Sournoise"
+          "title": "Discipline Sournoise",
+          "section": [
+            {
+              "title": "Alchimie [l]",
+              "description": [
+                [
+                  "Alchimie [production] poison, toxine et venin",
+                  "+2 blocs de production alchimique",
+                  "+2 blocs de production alchimique",
+                  "+2 blocs de production alchimique",
+                  "+2 blocs de production alchimique"
+                ]
+              ]
+            },
+            {
+              "title": "Embuscade [c]",
+              "description": [
+                [
+                  "Camouflage [immobile] peut se cacher en forêt",
+                  "Dissimulation [immobile] peut se cacher dans le noir",
+                  "Capture [avec une corde] la cible ne peut faire usage d’évasion",
+                  "Piège [attacher les deux extrémités du piège] permet de poser un piège",
+                  "Aveuglement [Toxine, Dague au torse] aveuglé"
+                ]
+              ]
+            },
+            {
+              "title": "Fourberie [c]",
+              "description": [
+                [
+                  "Attaque sournoise [touche au dos] +1 de dégât physique. Cumulatif avec venin.",
+                  "Coup bas [Toxine, Dague à un rein] paralysé 5 secondes",
+                  "Coup sonnant [Toxine, Dague entre les omoplates] assommé",
+                  "Coupe-jarret [Dague derrière la jambe] démembré",
+                  "Stylet [Dague à la main] démembré."
+                ]
+              ]
+            },
+            {
+              "title": "Travail de précision [c]",
+              "description": [
+                [
+                  "Serrurier [touché, 30 secondes] ouvre un cadenas",
+                  "Évasion [30 secondes sans bouger ou être touché, sauvegarde] paralysé",
+                  "Désamorçage [touché, 30 secondes] désarme et détruit un piège",
+                  "Torture [touché, 30 secondes] doit répondre à une question (pas un effet de vérité)",
+                  "Vol à la tire : place un objet sans être vu dans une poche. Peut prendre le contenu de la poche ou y déposer un objet au choix."
+                ]
+              ]
+            }
+          ]
         },
         {
           "title": "Discipline Magique"
