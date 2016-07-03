@@ -4,14 +4,15 @@
 
 <div ng-controller="manual_ctrl">
 
-  <!--Nav Bar -->
+  <!--Nav Bar menu interactive follow scroll position -->
+  <!-- Bug, only can manage 2 levels -->
   <div class="col-xs-3 bs-docs-sidebar">
     <ul id="sidebar" class="nav nav-stacked">
       <li ng-repeat="manual_sect_1 in manual">
-        <a target="_self" ng-href="#{{! formatAnchor(manual_sect_1.title) }}" ng-bind-html="formatMenuNavHtml(manual_sect_1.title)"></a>
+        <a target="_self" ng-href="#{{! formatAnchor(manual_sect_1) }}" ng-bind-html="formatMenuNavHtml(manual_sect_1.title)"></a>
         <ul class="nav nav-stacked">
           <li ng-repeat="manual_sect_2 in manual_sect_1.section">
-            <a target="_self" ng-href="#{{! formatAnchor(manual_sect_2.title) }}" ng-bind-html="manual_sect_2.title"></a>
+            <a target="_self" ng-href="#{{! formatAnchor(manual_sect_2) }}" ng-bind-html="manual_sect_2.title"></a>
           </li>
         </ul>
       </li>
@@ -19,20 +20,30 @@
     </ul>
   </div>
 
+  <!-- Main content -->
   <div class="col-sm-9" style="padding-bottom: 70px;">
-
     <h1 id="top" class="tl" style="text-align: center">Livre du joueur de Traître-Lame</h1>
     <div ng-repeat="manual_sect_1 in manual">
-      <h1 id="{{! formatAnchor(manual_sect_1.title) }}" ng-bind-html="getTitleHtml(manual_sect_1)"></h1>
+      <h1 id="{{! formatAnchor(manual_sect_1) }}" ng-bind-html="getTitleHtml(manual_sect_1)"></h1>
       <p ng-bind-html="formatHtmlDescription(manual_sect_1.description)"></p>
 
       <div ng-repeat="manual_sect_2 in manual_sect_1.section">
-        <h2 id="{{! formatAnchor(manual_sect_2.title) }}" ng-bind-html="getTitleHtml(manual_sect_2)"></h2>
+        <h2 id="{{! formatAnchor(manual_sect_2) }}" ng-bind-html="getTitleHtml(manual_sect_2)"></h2>
         <p ng-bind-html="formatHtmlDescription(manual_sect_2.description)"></p>
 
         <div ng-repeat="manual_sect_3 in manual_sect_2.section">
-          <h3 id="{{! formatAnchor(manual_sect_3.title) }}" ng-bind-html="getTitleHtml(manual_sect_3)"></h3>
+          <h3 id="{{! formatAnchor(manual_sect_3) }}" ng-bind-html="getTitleHtml(manual_sect_3)"></h3>
           <p ng-bind-html="formatHtmlDescription(manual_sect_3.description)"></p>
+
+          <div ng-repeat="manual_sect_4 in manual_sect_3.section">
+            <h4 id="{{! formatAnchor(manual_sect_4) }}" ng-bind-html="getTitleHtml(manual_sect_4)"></h4>
+            <p ng-bind-html="formatHtmlDescription(manual_sect_4.description)"></p>
+
+            <div ng-repeat="manual_sect_5 in manual_sect_4.section">
+              <h5 id="{{! formatAnchor(manual_sect_5) }}" ng-bind-html="getTitleHtml(manual_sect_5)"></h5>
+              <p ng-bind-html="formatHtmlDescription(manual_sect_5.description)"></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

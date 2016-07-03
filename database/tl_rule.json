@@ -265,6 +265,46 @@
           "title": "Discipline Professionnel"
         }
       ]
+    },
+    {
+      "title": "Rituel",
+      "description": "Les rituels sont divisés en x écoles et sous-école.",
+      "section": [
+        {
+          "title": "Démonologie",
+          "section": [
+            {
+              "title": "Possession",
+              "section": [
+                {
+                  "title": "Le dévoreur de tête",
+                  "description": [
+                    "Augmente les points de vie à 10, donne accès à la technique Décapitation.",
+                    [
+                      "Type : Rage",
+                      "Duration : 1 combat",
+                      "Coût : 6"
+                    ],
+                    "Note : Frénésie non-sauvegardable"
+                  ]
+                },
+                {
+                  "title": "La dame de fer",
+                  "description": [
+                    "Confère 4 point de vie de type armure. Réparable avec une composante magique (hors-combat).",
+                    [
+                      "Type : Bonus",
+                      "Duration : 24h",
+                      "Coût : 12"
+                    ],
+                    "Note : Silence durant toute la possession et maquillage gris ou masque."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

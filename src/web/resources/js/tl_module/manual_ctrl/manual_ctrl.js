@@ -3,16 +3,52 @@
 
 characterApp.controller("manual_ctrl", ["$scope", "$q", "$http", "$window", /*"$timeout",*/ function ($scope, $q, $http, $window) {
   $scope.manual = null;
+  $scope._lst_unique_anchor = [];
 
   $scope.formatMenuNavHtml = function (title) {
     return title + " <b class=\"caret\" />";
   };
 
-  $scope.formatAnchor = function (title) {
-    if (isUndefined(title)) {
+  $scope.formatAnchor = function (obj) {
+    // TODO this function only work in serial process when validate unique anchor name
+    if (isUndefined(obj)) {
       return "";
     }
-    return title.replace(/\s+/g, '');
+    if (isDefined(obj.titleAnchor)) {
+      return obj.titleAnchor;
+    }
+    var title = obj.title;
+
+    // an anchor cannot work with space
+    var anchor = title.replace(/\s+/g, '');
+
+    var max_loop = 1000;
+    // validate duplication
+    if ($scope._lst_unique_anchor.includes(anchor)) {
+      // find a new name, begin suffix with _2
+      var new_anchor;
+      for (var i = 2; i < max_loop; i++) {
+        new_anchor = anchor + "_" + i;
+        if (!(new_anchor in $scope._lst_unique_anchor)) {
+          // validate if unique and exit
+          break;
+        }
+      }
+      // inform developers about this problem
+      if (i >= max_loop) {
+        console.error("Manual ctrl - cannot find unique name for anchor " + anchor);
+        // don't append empty anchor in $scope._lst_unique_anchor
+        anchor = "";
+      } else {
+        console.warn("Manual ctrl - error duplication anchor name, rename it from " + anchor + " to " + new_anchor);
+        obj.titleAnchor = anchor = new_anchor;
+        $scope._lst_unique_anchor.push(anchor);
+      }
+    } else {
+      $scope._lst_unique_anchor.push(anchor);
+      obj.titleAnchor = anchor;
+    }
+    return anchor;
   };
 
   $scope.getTitleHtml = function (obj) {
