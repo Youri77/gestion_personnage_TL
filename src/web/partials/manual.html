@@ -19,147 +19,26 @@
     </ul>
   </div>
 
-
-  <!--<div class="col-xs-3 bs-docs-sidebar">-->
-  <!--<ul id="sidebar" class="nav nav-stacked">-->
-
-  <!--<li>-->
-  <!--<a target="_self" href="#mecbase">Mécanique de base <b class="caret"></b></a>-->
-  <!--<ul class="nav nav-stacked">-->
-  <!--<li><a target="_self" href="#meccomb">Mécanique de combat</a></li>-->
-  <!--<li><a target="_self" href="#creper">Création de personnage</a></li>-->
-  <!--<li><a target="_self" href="#magi">Magie</a></li>-->
-  <!--<li><a target="_self" href="#effjeu">Effets de Jeu</a></li>-->
-  <!--<li><a target="_self" href="#objop">Objets de jeu</a>-->
-  <!--</ul>-->
-  <!--</li>-->
-
-  <!--<li>-->
-  <!--<a target="_self" href="#habitech">Habiletés et Techniques <b class="caret"></b></a>-->
-  <!--<ul class="nav nav-stacked">-->
-  <!--<li><a target="_self" href="#discom">Discipline Commune</a></li>-->
-  <!--<li><a target="_self" href="#discomb">Discipline Combattante</a></li>-->
-  <!--<li><a target="_self" href="#dissou">Discipline Sournoise</a></li>-->
-  <!--<li><a target="_self" href="#dismag">Discipline Magique</a></li>-->
-  <!--<li><a target="_self" href="#disprof">Discipline Professionnel</a></li>-->
-  <!--</ul>-->
-  <!--</li>-->
-
-  <!--<li>-->
-  <!--<a target="_self" href="#production">Production</a>-->
-  <!--<ul class="nav nav-stacked">-->
-  <!--<li><a target="_self" href="#prod_alch">Alchimie</a></li>-->
-  <!--<li><a target="_self" href="#prod_artisan">Artisan</a></li>-->
-  <!--<li><a target="_self" href="#prod_mix">Mixture de potions</a></li>-->
-  <!--<li><a target="_self" href="#prod_forgeron">Forgeron</a></li>-->
-  <!--<li><a target="_self" href="#prod_herboriste">Herboriste</a></li>-->
-  <!--<li><a target="_self" href="#prod_enchantement">Enchantement</a></li>-->
-  <!--</ul>-->
-  <!--</li>-->
-
-  <!--<li>-->
-  <!--<a target="_self" href="#ritueldedepart">Rituel de Départ</a>-->
-  <!--<ul class="nav nav-stacked">-->
-  <!--<li><a target="_self" href="#rituel_démonolgie">Démonologie</a></li>-->
-  <!--<li><a target="_self" href="#rituel_élémentaire">Élémentaire</a></li>-->
-  <!--<li><a target="_self" href="#rituel_naturelle">Naturelle</a></li>-->
-  <!--<li><a target="_self" href="#rituel_nécromancie">Nécromancie</a></li>-->
-  <!--<li><a target="_self" href="#rituel_protection">Protection</a></li>-->
-  <!--<li><a target="_self" href="#rituel_création">Création</a></li>-->
-  <!--</ul>-->
-  <!--</li>-->
-
-  <!--<li>-->
-  <!--<a target="_self" href="#ritcré">Rituels de création</a>-->
-  <!--<ul class="nav nav-stacked">-->
-  <!--<li><a target="_self" href="#ritcré_artisanat">Artisanat</a></li>-->
-  <!--<li><a target="_self" href="#ritcré_autre">Autre</a></li>-->
-  <!--</ul>-->
-  <!--</li>-->
-
-  <!--<li>-->
-  <!--<a target="_self" href="#techmaitre">Techniques de maître</a>-->
-  <!--<ul class="nav nav-stacked">-->
-  <!--<li><a target="_self" href="#mdiscom">Discipline Commune (M)</a></li>-->
-  <!--<li><a target="_self" href="#mdiscomb">Discipline Combattante (M)</a></li>-->
-  <!--<li><a target="_self" href="#mdissou">Discipline Sournoise (M)</a></li>-->
-  <!--<li><a target="_self" href="#mdismag">Discipline Magique (M)</a></li>-->
-  <!--</ul>-->
-  <!--</li>-->
-
-  <!--<a class="nav nav-stacked" target="_self" href="#top"> Retour en haut </a>-->
-  <!--</ul>-->
-  <!--</div>-->
-
   <div class="col-sm-9" style="padding-bottom: 70px;">
 
     <h1 id="top" class="tl" style="text-align: center">Livre du joueur de Traître-Lame</h1>
     <div ng-repeat="manual_sect_1 in manual">
       <h1 id="{{! formatAnchor(manual_sect_1.title) }}" ng-bind-html="manual_sect_1.title"></h1>
-      <p ng-bind-html="manual_sect_1.description"></p>
+      <p ng-bind-html="formatHtmlDescription(manual_sect_1.description)"></p>
 
       <div ng-repeat="manual_sect_2 in manual_sect_1.section">
         <h2 id="{{! formatAnchor(manual_sect_2.title) }}" ng-bind-html="manual_sect_2.title"></h2>
-        <p ng-bind-html="manual_sect_2.description"></p>
+        <p ng-bind-html="formatHtmlDescription(manual_sect_2.description)"></p>
 
         <div ng-repeat="manual_sect_3 in manual_sect_2.section">
           <h3 id="{{! formatAnchor(manual_sect_3.title) }}" ng-bind-html="manual_sect_3.title"></h3>
-          <p ng-bind-html="manual_sect_3.description"></p>
+          <p ng-bind-html="formatHtmlDescription(manual_sect_3.description)"></p>
         </div>
       </div>
     </div>
 
-
-    <hr/>
-    <h2 id="magi">Magie</h2>
-    <h3>Sorts</h3>
-    <p>Toutes les techniques de la discipline magique n’étant pas passive sont considérées comme des sorts. Afin d’utiliser un sort, il est nécessaire de prononcer une formule de 12 syllabes au choix
-      du joueur qui est attaché à la technique précise que l’on désire utiliser en plus de dépenser un point d’énergie. La formule doit être crédible dans l’univers de jeu de Traitre-Lame. Dans le cas
-      d’une technique de production, il est nécessaire de produire une formule pour chacun des objets que l’on crée. Cette formule est consignée dans un livre de sort. Sans livre, un magicien ne peut
-      pas faire usage de ses sorts. </p>
-    <p>Les sorts ayant la portée [touché] ou [balle] peuvent être transmis au moyen d’une arme de bois. Tout sort peut être invoqué et conservé pour utilisation future. Au moment de prononcer la
-      formule d’un tel sort, le joueur doit lever sa main, son arme de bois ou sa balle au ciel. Tant que la main du joueur est au ciel, le sort est maintenu. Toute hostilité physique envers le joueur
-      (ex. : une touche avec une arme ou avec la main) met fin au sort, gaspillant le point d’énergie. Cette règle est applicable aux rituels à portée similaire.</p>
-
-    <h3>Rituel</h3>
-    <p>Un rituel est un sort de pouvoir supérieur nécessitant une mémorisation avant usage. L’usage d’un rituel se décline en trois étapes : l’apprentissage, la mémorisation et l’utilisation. </p>
-    <p>* Apprentissage : Au moment de choisir l’habileté rituel, le joueur choisi une école de spécialisation parmi les suivantes : élémentaire, protection, nécromancie, démonologie ou naturelle. Il
-      choisit ensuite deux des trois rituels présentés pour son école aux pages 12 et 13. Il peut aussi apprendre l’école de création avec la technique infusion, cette école répondant à des règles
-      particulières présentées en page 13. Il existe aussi plusieurs rituels à apprendre en jeu. Tous les rituels et leurs détails doivent être inscrits dans un livre de sort (ou l’équivalent). </p>
-    <p>* Mémorisation : Pour mémoriser un rituel, le joueur doit produire une cérémonie spécifique pour chacun de ces rituels connus. Ces cérémonies doivent cumuler autant de points de protocole que
-      le nombre de composantes magiques nécessaires pour faire la cérémonie. La façon d’obtenir des points de protocole est décrite à l’annexe 2 : points de protocole en page 15. La cérémonie de
-      mémorisation ne peut être accomplie que hors combat.</p>
-    <p>* Utilisation : Une fois le rituel mémoriser, le joueur doit prononcer la formule de 12 syllabes qu’il a composée pour son rituel, en suivant les mêmes règles que pour tout autre sort. Il
-      applique l’effet de son rituel selon sa description. </p>
-    <p>Note : les objets baguettes et baguettes enchantées permettent à un mage de mémoriser instantanément le dernier rituel mémorisé en payant son cout en composantes. Une baguette est détruite
-      après usage, alors qu’une baguette enchantée peut être utilisée une fois par combat. L’usage de baguettes successives mémorisent toujours le même rituel.</p>
-    <h2 id="effjeu">Effets de jeu</h2>
-    <p>**Assommé :** tombe inconscient jusqu’à la fin des hostilités. Après 2 minutes de calme, le joueur revient à ses esprits sans énergie et avec deux points de vie. </p>
-    <p>**Aveugle :** ferme les yeux pour 5 secondes.</p>
-    <p>**Caché :** ne peut être vu. Le joueur doit croiser les bras devant lui. Toute personne l’ayant vu croiser les bras est immunisée à l’effet.</p>
-    <p>**Calme :** enrager et peur prennent fin et sont sans effet tant que l’effet perdure.</p>
-    <p>**Cassé :** l’arme ou le bouclier doit être rangé. Peut être réparé par la technique forgeron hors-combat pour un point d’énergie.</p>
-    <p>**Démembré :** membre touché est inutilisable. Le regain d’un point de vie doit être consacré au membre pour le guérir.</p>
-    <p>**Désarmé :** jette son arme au sol ou la remet à sa ceinture (au choix de la cible).</p>
-    <p>**Dominé :** obéis aux ordres verbaux de l’initiateur.</p>
-    <p>**Enragé :** attaque la personne la plus près d’elle sans considération pour les autres. Prend fin quand le joueur ou sa cible est assommé.</p>
-    <p>**Foudroyé :** place un genou au sol.</p>
-    <p>**Hors-combat :** ne peut être utilisée si le joueur peut entendre une bataille.</p>
-    <p>**Immatérielle :** est invisible et intangible. Le joueur croise les bras au-dessus de sa tête.</p>
-    <p>**Mort :** tombe au sol et ne prend aucune action. Voir le karma et la mort pour plus de détails.</p>
-    <p>**Muet :** perds l’usage de la parole. Reviens au moment d’un repos.</p>
-    <p>**Paralysé :** ne peut pas bouger.</p>
-    <p>**Peur :** s’éloigne de l’initiateur au meilleur de ses capacités pour 10 pas.</p>
-    <p>**Repos :** méditation de 5 minutes hors-combat à la fin de laquelle le joueur reprend l’ensemble de ses points de vie (sauf ceux liés à l’armure) et d’énergie.</p>
-    <p>**Nécrose :** enlève un point de vie maximum. Cumulable.</p>
-    <h2 id="objop">Objets de jeu et objets personnels</h2>
-    <p>Il est possible de dépouiller un joueur assommé, mort ou paralysé. Pour se faire, il faut chercher le corps du joueur pour la représentation de cet objet et le déposé à côté de lui. Par
-      exemple, une armure magique peut être dérobée en retirant l’armure de sur le cadavre. Si un joueur traine des potions, il faudrait trouver ses récipients. Un objet sans représentation physique
-      décorum (comme un bloc) est représenté par son carton. Une fois l’objet déposé au côté du corps, le joueur remet les cartons d’objet à son détrousseur, si applicable. Il n’est jamais permis de
-      cacher des possessions dans ses sous-vêtements. Chaque joueur est responsable de représenter lui-même ses objets de jeu. Par conséquent, si un joueur vole une arme magique, il doit lui-même
-      fournir une arme règlementaire pour la représenter. </p>
-    <p>Les objets remis par l’organisation, à l’exception des papiers d’objets, doivent toujours être redonnés à l’organisation à la fin du jeu (en personne ou au cabanon de rangement).</p>
     <hr>
+
     <h1 id="habitech">Habiletés et techniques <a target="_self" href="#techmaitre" class="btn btn-default">Technique de Maitre <span class="glyphicon glyphicon-star-empty"></span></a></h1>
     <p>Les habiletés déterminent les possibilités d’un personnage en jeu. Chaque joueur peut puiser ses habiletés parmi cinq disciplines : commune, combattante, sournoise, magique et
       professionnelle.</p>

@@ -1,0 +1,127 @@
+{
+  "manual": [
+    {
+      "title": "Mécanique de base",
+      "section": [
+        {
+          "title": "Mécanique de combat",
+          "section": [
+            {
+              "title": "Points de vie",
+              "description": "Chaque joueur commence avec 3 points de vie et ne peut jamais en avoir plus que 10. Quand un joueur tombe à 0 point de vie, la prochaine touche sur un de ses membres le prive de ce membre (jusqu’à guérison d’un point de vie utilisé à cet effet). La prochaine touche au torse ou sur un membre coupé le rend assommé."
+            },
+            {
+              "title": "Dégât",
+              "description": "Toutes les armes de mêlée ou de lancer infligent 1 point de dégât. Les flèches font 2 points de dégât. Il n’est jamais possible d’infliger plus de 3 de dégât avec une arme."
+            },
+            {
+              "title": "Armes et bouclier",
+              "description": "On considère à deux mains toute arme d’une longueur totale entre 130 cm et 210 cm, aucune arme ne peut dépasser cette dimension. Un joueur ne peut manier une autre arme, ou utiliser un bouclier, s’il utilise une arme à deux mains. Une arme brune est considérée comme étant en bois et ne fait aucun dégât. Tous les boucliers doivent mesurer moins de 100 cm dans leur plus grande dimension et être conçus de matériaux réalistes. Les boucliers bloquent tous les projectiles, incluant les sorts, mais pas ceux des engins de siège. L’organisation se réserve le droit de refuser toute arme ou tout bouclier qu’elle juge dangereux."
+            },
+            {
+              "title": "Armure",
+              "description": "Un plastron de cuir confère 1 point de vie. Un plastron de métal confère 2 points de vie. Une protection aux jambes et aux bras confère 1 point de vie supplémentaire. Les points de vie de l’armure sont les premiers à être perdu en combat. Une armure ainsi brisée doit être réparée par la technique forgeron hors-combat au cout d’un d’énergie pour conférer à nouveau ses points de vie."
+            },
+            {
+              "title": "Le karma et la mort",
+              "description": "Un joueur assommé n’est pas mort. Pour tuer un joueur, il faut lui faire une touche au torse alors qu’il est assommé en déclarant achever ce joueur. Cette action incombe une pénalité d’un au karma du joueur qui achève. Le karma est la mesure d’un personnage par rapport à la faveur divine. Quand un joueur meurt et qu’aucun autre joueur n’a la capacité de le ramener à la vie, il peut se rendre au cimetière 2 minutes après les hostilités, payer 5 de karma et attendre 10 minutes au cimetière avant de retourner au jeu au maximum de sa capacité (excepté pour ses habiletés de production et rituel). Les joueurs commencent chaque jeu avec 10 de karma, et peuvent revenir à la vie au cimetière s’il leur reste au moins 1 de karma. Si un joueur n’a plus de karma, ou un karma négatif, il peut abandonner son personnage ou attendre au sol d’être ramené à la vie par un autre joueur."
+            }
+          ]
+        },
+        {
+          "title": "Création de personnage",
+          "section": [
+            {
+              "title": "Départ",
+              "description": "Un nouveau personnage commence avec 2 points d’énergie et 6 points d’expérience à distribuer. Le joueur peut choisir jusqu’à deux disciplines parmi les 4 suivantes: combattante, sournoise, magique et professionnelle. Pour chaque discipline, il doit choisir deux habiletés. Il peut ensuite dépenser ses points d’expérience de départ parmi les habiletés choisies et celles de la discipline commune. Il n’est pas possible d’avoir plus de 3 points d’expérience dans une habileté donnée au départ."
+            },
+            {
+              "title": "Progression",
+              "description": "Chaque jeu, un personnage obtient 1 point d’expérience. Le joueur investit ce point d’expérience dans l’une de ses habiletés, jusqu’à concurrence de 3 points par habileté. Quand un joueur atteint 3 d’expérience dans chacune de ses habiletés en dehors de la discipline commune, il obtient 4 nouvelles habiletés. Cela n’arrive qu’une seule fois dans la vie d’un personnage. Comme au départ, il choisit 2 habiletés pour 2 disciplines, ou deux fois la même discipline. Il est possible de choisir une habileté que l’on possède déjà. À ce moment, le joueur pourra investir 2 points d’expérience additionnels dans cette habileté. Il peut alors aller chercher les 5 techniques de l’habileté visée. Voir l’annexe 1 en page 14 pour un exemple de progression de personnage."
+            },
+            {
+              "title": "Remplacement",
+              "description": "Un nouveau joueur peut toujours changer de personnage sans pénalité d’expérience à son second jeu. Il peut refaire les statistiques de son personnage ou le changer au complet à sa guise. À tout autre moment, un joueur peut créer un nouveau personnage selon la mécanique décrite en début de section. Il ajoute à ses points d’expérience de départ la moitié des points d’expérience cumulés par son personnage actuel. Un changement de personnage est irrévocable."
+            }
+          ]
+        },
+        {
+          "title": "Magie",
+          "section": [
+            {
+              "title": "Sorts",
+              "description": [
+                "Toutes les techniques de la discipline magique n’étant pas passive sont considérées comme des sorts. Afin d’utiliser un sort, il est nécessaire de prononcer une formule de 12 syllabes au choix du joueur qui est attaché à la technique précise que l’on désire utiliser en plus de dépenser un point d’énergie. La formule doit être crédible dans l’univers de jeu de Traitre-Lame. Dans le cas d’une technique de production, il est nécessaire de produire une formule pour chacun des objets que l’on crée. Cette formule est consignée dans un livre de sort. Sans livre, un magicien ne peut pas faire usage de ses sorts.",
+                "Les sorts ayant la portée [touché] ou [balle] peuvent être transmis au moyen d’une arme de bois. Tout sort peut être invoqué et conservé pour utilisation future. Au moment de prononcer la formule d’un tel sort, le joueur doit lever sa main, son arme de bois ou sa balle au ciel. Tant que la main du joueur est au ciel, le sort est maintenu. Toute hostilité physique envers le joueur (ex. : une touche avec une arme ou avec la main) met fin au sort, gaspillant le point d’énergie. Cette règle est applicable aux rituels à portée similaire."
+              ]
+            },
+            {
+              "title": "Rituel",
+              "description": [
+                "Un rituel est un sort de pouvoir supérieur nécessitant une mémorisation avant usage. L’usage d’un rituel se décline en trois étapes : l’apprentissage, la mémorisation et l’utilisation.",
+                [
+                  "Apprentissage : Au moment de choisir l’habileté rituel, le joueur choisi une école de spécialisation parmi les suivantes : élémentaire, protection, nécromancie, démonologie ou naturelle. Il choisit ensuite deux des trois rituels présentés pour son école aux pages 12 et 13. Il peut aussi apprendre l’école de création avec la technique infusion, cette école répondant à des règles particulières présentées en page 13. Il existe aussi plusieurs rituels à apprendre en jeu. Tous les rituels et leurs détails doivent être inscrits dans un livre de sort (ou l’équivalent).",
+                  "Mémorisation : Pour mémoriser un rituel, le joueur doit produire une cérémonie spécifique pour chacun de ces rituels connus. Ces cérémonies doivent cumuler autant de points de protocole que le nombre de composantes magiques nécessaires pour faire la cérémonie. La façon d’obtenir des points de protocole est décrite à l’annexe 2 : points de protocole en page 15. La cérémonie de mémorisation ne peut être accomplie que hors combat.",
+                  "Utilisation : Une fois le rituel mémoriser, le joueur doit prononcer la formule de 12 syllabes qu’il a composée pour son rituel, en suivant les mêmes règles que pour tout autre sort. Il applique l’effet de son rituel selon sa description."
+                ],
+                "Note : les objets baguettes et baguettes enchantées permettent à un mage de mémoriser instantanément le dernier rituel mémorisé en payant son cout en composantes. Une baguette est détruite après usage, alors qu’une baguette enchantée peut être utilisée une fois par combat. L’usage de baguettes successives mémorisent toujours le même rituel."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Effets de jeu",
+          "description": [
+            [
+              "Assommé : tombe inconscient jusqu’à la fin des hostilités. Après 2 minutes de calme, le joueur revient à ses esprits sans énergie et avec deux points de vie.",
+              "Aveugle : ferme les yeux pour 5 secondes.",
+              "Caché : ne peut être vu. Le joueur doit croiser les bras devant lui. Toute personne l’ayant vu croiser les bras est immunisée à l’effet.",
+              "Calme : enrager et peur prennent fin et sont sans effet tant que l’effet perdure.",
+              "Cassé : l’arme ou le bouclier doit être rangé. Peut être réparé par la technique forgeron hors-combat pour un point d’énergie.",
+              "Démembré : membre touché est inutilisable. Le regain d’un point de vie doit être consacré au membre pour le guérir.",
+              "Désarmé : jette son arme au sol ou la remet à sa ceinture (au choix de la cible).",
+              "Dominé : obéis aux ordres verbaux de l’initiateur.",
+              "Enragé : attaque la personne la plus près d’elle sans considération pour les autres. Prend fin quand le joueur ou sa cible est assommé.",
+              "Foudroyé : place un genou au sol.",
+              "Hors-combat : ne peut être utilisée si le joueur peut entendre une bataille.",
+              "Immatérielle : est invisible et intangible. Le joueur croise les bras au-dessus de sa tête.",
+              "Mort : tombe au sol et ne prend aucune action. Voir le karma et la mort pour plus de détails.",
+              "Muet : perds l’usage de la parole. Reviens au moment d’un repos.",
+              "Paralysé : ne peut pas bouger.",
+              "Peur : s’éloigne de l’initiateur au meilleur de ses capacités pour 10 pas.",
+              "Repos : méditation de 5 minutes hors-combat à la fin de laquelle le joueur reprend l’ensemble de ses points de vie (sauf ceux liés à l’armure) et d’énergie.",
+              "Nécrose : enlève un point de vie maximum. Cumulable."
+            ]
+          ]
+        },
+        {
+          "title": "Objets de jeu et objets personnels",
+          "description": [
+            "Il est possible de dépouiller un joueur assommé, mort ou paralysé. Pour se faire, il faut chercher le corps du joueur pour la représentation de cet objet et le déposé à côté de lui. Par exemple, une armure magique peut être dérobée en retirant l’armure de sur le cadavre. Si un joueur traine des potions, il faudrait trouver ses récipients. Un objet sans représentation physique décorum (comme un bloc) est représenté par son carton. Une fois l’objet déposé au côté du corps, le joueur remet les cartons d’objet à son détrousseur, si applicable. Il n’est jamais permis de cacher des possessions dans ses sous-vêtements. Chaque joueur est responsable de représenter lui-même ses objets de jeu. Par conséquent, si un joueur vole une arme magique, il doit lui-même fournir une arme règlementaire pour la représenter.",
+            "Les objets remis par l’organisation, à l’exception des papiers d’objets, doivent toujours être redonnés à l’organisation à la fin du jeu (en personne ou au cabanon de rangement)."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Habiletés et Techniques",
+      "section": [
+        {
+          "title": "Discipline Commune"
+        },
+        {
+          "title": "Discipline Combattante"
+        },
+        {
+          "title": "Discipline Sournoise"
+        },
+        {
+          "title": "Discipline Magique"
+        },
+        {
+          "title": "Discipline Professionnel"
+        }
+      ]
+    }
+  ]
+}
