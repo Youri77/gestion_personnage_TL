@@ -80,3 +80,10 @@ body {
     text-size: 1em;
     color: #D6D2D2;
 }
+
+.anchor {
+    display: block;
+    height: 40px; /*same height as header*/
+    margin-top: -40px; /*same height as header*/
+    visibility: hidden;
+}

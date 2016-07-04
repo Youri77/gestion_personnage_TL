@@ -21,30 +21,38 @@
   </div>
 
   <!-- Main content -->
-  <div class="col-sm-9" style="padding-bottom: 70px;">
-    <h1 id="top" class="tl" style="text-align: center">Livre du joueur de Traître-Lame</h1>
+  <div class="col-sm-9" style="padding-bottom: 70px; padding-top: 70px;">
+    <span class="anchor" id="top"></span>
+    <h1 class="tl" style="text-align: center">Livre du joueur de Traître-Lame</h1>
+
     <div ng-repeat="manual_sect_1 in manual">
-      <h1 id="{{! formatAnchor(manual_sect_1) }}" ng-bind-html="getTitleHtml(manual_sect_1)"></h1>
+      <!-- This span class anchor only exist to help anchor with nav menu top fixed -->
+      <span class="anchor" id="{{! formatAnchor(manual_sect_1) }}"></span>
+      <h1 ng-bind-html="getTitleHtml(manual_sect_1)"></h1>
       <p ng-bind-html="formatHtmlDescription(manual_sect_1.description)"></p>
 
       <div ng-repeat="manual_sect_2 in manual_sect_1.section">
-        <h2 id="{{! formatAnchor(manual_sect_2) }}" ng-bind-html="getTitleHtml(manual_sect_2)"></h2>
+        <span class="anchor" id="{{! formatAnchor(manual_sect_2) }}"></span>
+        <h2 ng-bind-html="getTitleHtml(manual_sect_2)"></h2>
         <p ng-bind-html="formatHtmlDescription(manual_sect_2.description)"></p>
 
         <div ng-repeat="manual_sect_3 in manual_sect_2.section">
-          <h3 id="{{! formatAnchor(manual_sect_3) }}" ng-bind-html="getTitleHtml(manual_sect_3)"></h3>
+          <span class="anchor" id="{{! formatAnchor(manual_sect_3) }}"></span>
+          <h3 ng-bind-html="getTitleHtml(manual_sect_3)"></h3>
           <p ng-bind-html="formatHtmlDescription(manual_sect_3.description)"></p>
 
           <div class="panel panel-primary" ng-repeat="manual_sect_4 in manual_sect_3.section">
+            <span class="anchor" id="{{! formatAnchor(manual_sect_4) }}"></span>
             <div class="panel-heading">
-              <h4 class="panel-title" id="{{! formatAnchor(manual_sect_4) }}" ng-bind-html="getTitleHtml(manual_sect_4)"></h4>
+              <h4 class="panel-title" ng-bind-html="getTitleHtml(manual_sect_4)"></h4>
             </div>
             <div class="panel-body">
               <p ng-bind-html="formatHtmlDescription(manual_sect_4.description)"></p>
 
               <div class="panel panel-primary" ng-repeat="manual_sect_5 in manual_sect_4.section">
+                <span class="anchor" id="{{! formatAnchor(manual_sect_5) }}"></span>
                 <div class="panel-heading">
-                  <h5 class="panel-title" id="{{! formatAnchor(manual_sect_5) }}" ng-bind-html="getTitleHtml(manual_sect_5)"></h5>
+                  <h5 class="panel-title" ng-bind-html="getTitleHtml(manual_sect_5)"></h5>
                 </div>
                 <div class="panel-body">
                   <p ng-bind-html="formatHtmlDescription(manual_sect_5.description)"></p>
