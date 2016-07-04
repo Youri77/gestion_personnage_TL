@@ -259,10 +259,110 @@
           ]
         },
         {
-          "title": "Discipline Magique"
+          "title": "Discipline Magique",
+          "section": [
+            {
+              "title": "Artisanat Arcane [c]",
+              "description": [
+                [
+                  "Mixture de potions [production] potions",
+                  "Enchantement [production] objets enchantés",
+                  "Infusion [passif] accès aux rituels de création",
+                  "Réparation [touché] répare une armure ou un objet cassé",
+                  "Disjonction [touché, 1 composante] retire l’aspect enchanté. Mets fin à un rituel."
+                ]
+              ]
+            },
+            {
+              "title": "Rituel [l]",
+              "description": [
+                [
+                  "+6 composantes au début du jeu",
+                  "+3 composantes au début du jeu",
+                  "+3 composantes au début du jeu",
+                  "+3 composantes au début du jeu",
+                  "+3 composantes au début du jeu."
+                ]
+              ]
+            },
+            {
+              "title": "Sorcellerie [c]",
+              "description": [
+                [
+                  "Frénésie [balle] enragée",
+                  "Terreur [balle] apeurée",
+                  "Noirceur [balle] aveuglée",
+                  "Silence [balle] muet",
+                  "Éclair [balle] 3 de dégât."
+                ]
+              ]
+            },
+            {
+              "title": "Thaumaturgie [c]",
+              "description": [
+                [
+                  "Guérison [touché] redonne 1 PV",
+                  "Réanimation [touché] réveille d’assommée avec 0 point de vie et tous ses membres",
+                  "Résurrection [touché, hors combat] passe de mort à assommé.",
+                  "Liberté [touché] met fin à la paralysie",
+                  "Voix [touché] met fin à muet."
+                ]
+              ]
+            }
+          ]
         },
         {
-          "title": "Discipline Professionnel"
+          "title": "Discipline Professionnel",
+          "section": [
+            {
+              "title": "Baratin [c]",
+              "description": [
+                [
+                  "Diplomatie : permets de savoir si la dernière affirmation est vraie",
+                  "Mensonge [sauvegarde] vérité et diplomatie",
+                  "Revenu [passif] génère 10 piécettes par jeu",
+                  "Verbomoteur [sauvegarde] muet",
+                  "Discours [parle à la cible pendant 30 secondes] met fin à dominer"
+                ]
+              ]
+            },
+            {
+              "title": "Marchandage [l]",
+              "description": [
+                [
+                  "4 blocs de production ou composantes, au choix, par jeu",
+                  "+2 blocs de production ou composantes, au choix, par jeu",
+                  "+2 blocs de production ou composantes, au choix, par jeu",
+                  "+2 blocs de production ou composantes, au choix, par jeu",
+                  "+2 blocs de production ou composantes, au choix, par jeu"
+                ]
+              ]
+            },
+            {
+              "title": "Médecine [c]",
+              "description": [
+                [
+                  "Opération [touché, 30 secondes] retire une nécrose",
+                  "Suture [touché, 30 secondes] redonne 2 points de vie",
+                  "Psychiatrie [touché] la cible devient calme",
+                  "Relaxation [touché, 5 secondes] met fin à muet",
+                  "Pharmacie [touché, 5 secondes] peut utiliser les médicaments"
+                ]
+              ]
+            },
+            {
+              "title": "Métier [c]",
+              "description": [
+                [
+                  "Artisanat [production] filet, corde, baguette, fortification et piège.",
+                  "Forge [production] arme , armure, bouclier, cadenas et engin",
+                  "Herboristerie [production] médicaments",
+                  "Spécialiste I : +2 blocs de production à une production existante (sauf alchimie)",
+                  "Spécialiste II : +2 blocs de production à une production existante (sauf alchimie)."
+                ]
+              ]
+            }
+          ]
         }
       ]
     },
