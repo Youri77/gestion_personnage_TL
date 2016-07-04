@@ -456,8 +456,7 @@
                       "Coût : 50",
                       "Duration : Mort Permanente",
                       "Type : "
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Arrêt de Mort"
                 },
@@ -502,8 +501,7 @@
                       "Coût : 2+",
                       "Duration : Instantanée",
                       "Type : Production"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Prospection"
                 },
@@ -514,8 +512,7 @@
                       "Coût : 3",
                       "Duration : Instantanée",
                       "Type : Production"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Minéralisation"
                 },
@@ -526,8 +523,7 @@
                       "Coût : 12",
                       "Duration : Permanent",
                       "Type : Bonus"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Gravité"
                 },
@@ -550,8 +546,7 @@
                       "Coût : 2",
                       "Duration : 1 combat",
                       "Type : Bonus"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Jambe de roc"
                 },
@@ -579,8 +574,7 @@
                       "Coût : 1",
                       "Duration : 24h",
                       "Type : Bonus"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Lumière"
                 },
@@ -591,8 +585,7 @@
                       "Coût : 1",
                       "Duration : 1 utilisation",
                       "Type : Bonus"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Incinération"
                 },
@@ -603,8 +596,7 @@
                       "Coût : 2",
                       "Duration : 1 utilisation",
                       "Type : Bonus"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Rayons Ardents"
                 },
@@ -615,8 +607,7 @@
                       "Coût : 3",
                       "Duration : 1 utilisation",
                       "Type : Effet"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Fumigation"
                 },
@@ -680,8 +671,7 @@
                       "Coût : 3",
                       "Duration : 1 combat",
                       "Type : Bonus"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Bourrasque"
                 },
@@ -692,8 +682,7 @@
                       "Coût : 2",
                       "Duration : 1 utilisation",
                       "Type : Bonus"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Contact Paralysant"
                 },
@@ -745,8 +734,7 @@
                       "Coût : 2+",
                       "Duration : 1 utilisation",
                       "Type : Production"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Infusion magique"
                 },
@@ -793,8 +781,7 @@
                       "Coût : 3",
                       "Duration : 1 utilisation",
                       "Type : Effet"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Toucher Glacial"
                 },
@@ -805,8 +792,7 @@
                       "Coût : 5",
                       "Duration : 1 combat",
                       "Type : Bonus"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Coeur de Glace"
                 }
@@ -851,7 +837,17 @@
                 },
                 {
                   "description": [
-                    "GROS VAGIN SALE CHANGE MOI SINON JE SUIS UN PROBLÈME",
+                    [
+                      "Ailes/Queue : sauvegarde Foudroyé",
+                      "Bec/Museau : +2 blocs d'Alchimie par jeu",
+                      "Yeux perçant : Donne la technique Vigilance",
+                      "Branchies [croise les bras] : peut se cacher quand il touche à un court d’eau",
+                      "Diurne: Donne la technique Camouflage",
+                      "Nocturne: Donne la technique Dissimulation",
+                      "Herbivore : + 2 blocs d’Herboristerie par jeu",
+                      "Carnivore : + 1 ration par jeu",
+                      "Omnivore : + 2 blocs d'Artisanat par jeu."
+                    ],
                     [
                       "Coût : 20",
                       "Duration : Permanent",
@@ -897,8 +893,7 @@
                       "Coût : 2+",
                       "Duration : Instantanée",
                       "Type : Production"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Pousses Prodigieuse"
                 },
@@ -909,8 +904,7 @@
                       "Coût : 2+",
                       "Duration : Instantanée",
                       "Type : Production"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Toxicité"
                 },
@@ -1311,8 +1305,7 @@
                       "Coût : 1",
                       "Duration : 1 utilisation",
                       "Type : Effet"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Décomposeur"
                 },
@@ -1550,8 +1543,7 @@
                       "Coût : 2",
                       "Duration : 1 utilisation",
                       "Type : Effet"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Cercle de protection personnel"
                 },
@@ -1562,8 +1554,7 @@
                       "Coût : 3+",
                       "Duration : 1 utilisation",
                       "Type : Effet"
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Cercle de protection personnel, de groupe"
                 },
@@ -1574,11 +1565,259 @@
                       "Coût : 6",
                       "Duration : ",
                       "Type : "
-                    ],
-                    ""
+                    ]
                   ],
                   "title": "Cercle de dévoilement"
                 }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Techniques de maître",
+      "section": [
+        {
+          "title": "Discipline commune",
+          "description": [
+            "On peut choisir maximum deux fois endurance ou énergie."
+          ],
+          "section": [
+            {
+              "title": "Endurance [l]",
+              "description": [
+                [
+                  "+1 point de vie maximum",
+                  "+1 point de vie maximum"
+                ]
+              ]
+            },
+            {
+              "title": "Énergie [l]",
+              "description": [
+                [
+                  "+2 points d’énergie maximum",
+                  "+2 points d’énergie maximum"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Discipline combattante",
+          "section": [
+            {
+              "title": "Discipline [c]",
+              "description": [
+                [
+                  "Lévitation [passif] immunisé à foudroyé",
+                  "Formation [Dire “formation”] Entre 3 et 6 joueurs prennent position dans une formation. Tant qu’ils tiennent cette formation, ils on 1 point de vie maximum supplémentaires",
+                  "Survie [passif] génère une ration par jeu. Est considéré comme ayant suture.",
+                  "Entretien [sauvegarde] cassé."
+                ]
+              ]
+            },
+            {
+              "title": "Karma [l]",
+              "description": [
+                [
+                  "Bénédiction [passif] +3 karma",
+                  "Phoenix [-5 karma] le joueur reviens à la vie avec toute son énergie et tous ses points de vie",
+                  "Sacrifice [passif] peut échanger 1 point de karma contre 1 point d’énergie",
+                  "Sanguinaire [passif] Quand le personnage perd du karma, il est guérit d’un point de vie"
+                ]
+              ]
+            },
+            {
+              "title": "Discipline [c]",
+              "description": [
+                [
+                  "Lévitation [passif] immunisé à foudroyé",
+                  "Formation [Dire “formation”] Entre 3 et 6 joueurs prennent position dans une formation. Tant qu’ils tiennent cette formation, ils on 1 point de vie maximum supplémentaires",
+                  "Survie [passif] génère une ration par jeu. Est considéré comme ayant suture.",
+                  "Entretien [sauvegarde] cassé."
+                ]
+              ]
+            },
+            {
+              "title": "Offense [c]",
+              "description": [
+                [
+                  "Décapitation [touche au plexus et touche au dos] mort",
+                  "Brise-Bouclier [sur une charge de 3 pas] bouclier touché est cassé",
+                  "Casse-Lame [3 touches consécutives sur l’arme] arme touchée est cassée",
+                  "Titan [passif] Arme à deux mains inflige 2 de dégât (sauf les lances)"
+                ]
+              ]
+            },
+            {
+              "title": "Défense [c]",
+              "description": [
+                [
+                  "Robuste [passif] +1 point de vie",
+                  "Volonté de fer [sauvegarde] domination",
+                  "Estomac d’acier [sauvegarde] poison et maladies transmises par la salive",
+                  "Santé de fer [sauvegarde] maladies transmises par l’air, le sang ou la famine"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Discipline sournoise",
+          "section": [
+            {
+              "title": "Alchimie [l]",
+              "description": [
+                [
+                  "Alchimiste prolifique [passif] +3 blocs alchimiques",
+                  "Alchimiste versatile [passif] peut utiliser un bloc d’herboristerie comme un bloc d’alchimie",
+                  "Suicide [passif] à tout moment, le joueur peut choisir d’être mort",
+                  "Distillerie [production] potions"
+                ]
+              ]
+            },
+            {
+              "title": "Embuscade [c]",
+              "description": [
+                [
+                  "Nocturne [passif] +1 point de vie la nuit",
+                  "Maître des pièges [sauvegarde] pièges et toiles",
+                  "Commotion [sur une personne assommée] oublie les 5 dernières minutes",
+                  "Déguisement [passif] permet d’avoir un autre costume et d’affirmer être un autre personnage"
+                ]
+              ]
+            },
+            {
+              "title": "Fourberie [c]",
+              "description": [
+                [
+                  "Main de fer [sur une poignée de main] démembré",
+                  "Égorgement [couteau passé sous la gorge] mort",
+                  "Étouffement [dague au torse] muet",
+                  "Feinte [sauvegarde] touche (ne fonctionne que sur les attaques normales, ne bloquent pas les techniques, ni les rituels)"
+                ]
+              ]
+            },
+            {
+              "title": "Travail de précision [c]",
+              "description": [
+                [
+                  "Chanceux [passif] génère 6 blocs au choix par jeu",
+                  "Escroc [passif] génère 50 piécettes par jeu",
+                  "Orfèvre [production] joyau",
+                  "Triche [instantané] permet d’avoir une chance additionnelle dans un jeu de hasard"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Discipline magique",
+          "section": [
+            {
+              "title": "Artisanat Arcane [c]",
+              "description": [
+                [
+                  "Chimiste prolifique [passif] +3 blocs de production de potions",
+                  "Chimiste versatile [passif] peut utiliser les blocs d’enchantement pour faire des potions",
+                  "Enchanteur prolifique [passif] +3 blocs de production d’enchantement",
+                  "Enchanteur versatile [passif] peut utiliser les blocs de potion pour enchanter"
+                ]
+              ]
+            },
+            {
+              "title": "Rituel [l]",
+              "description": [
+                [
+                  "Versatilité I [passif] donne accès à une sous-écoles d’une école de magie différente de la spécialité du joueur. Il doit utiliser des composantes de cette école de magie pour invoquer les rituels.",
+                  "Versatilité II [passif] idem",
+                  "Versatilité III [passif] idem",
+                  "Maître des rituels [passif] +5 composantes par jeu"
+                ]
+              ]
+            },
+            {
+              "title": "Sorcellerie [c]",
+              "description": [
+                [
+                  "Télékinésie [balle] la cible recule de 10 pas",
+                  "Tonnerre [balle] 2 de dégât, foudroyé",
+                  "Sorcier débrouillard[passif] peut utiliser un bloc de potion pour lancer un sort de sorcellerie",
+                  "Désintégration [balle à un membre] démembré"
+                ]
+              ]
+            },
+            {
+              "title": "Thaumaturgie [c]",
+              "description": [
+                [
+                  "Réincarnation [touché] ramène un mort à la vie avec 3 points de vie et 0 énergie",
+                  "Guérison suprême [touché] guérit 2 points de vie",
+                  "Guérisseur débrouillard [passif] peut utiliser un bloc d’enchantement pour lancer un sort de thaumaturgie",
+                  "Restauration [touché] régénère les 4 membres"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Discipline professionnelle",
+          "section": [
+            {
+              "title": "Baratin [c]",
+              "description": [
+                [
+                  "Alcoolique [passif] une consommation redonne un point de vie",
+                  "Triche [instantané] permet d’avoir une chance additionnelle dans un jeu de hasard",
+                  "Rumeurs [passif] le joueur obtiens quelques informations sur 3 scènes du jeu suivant. Il obtient notamment l’heure approximative, les factions impliquées, et une idée de l’évènement principal",
+                  "Éloquence [suite à un discours] Les joueurs défendant la même cause que l’initiateur reçoivent +1 énergie jusqu’à ce que la cause ait été défendue une fois"
+                ]
+              ]
+            },
+            {
+              "title": "Marchandage [l]",
+              "description": [
+                [
+                  "Marchand prolifique [passif] +3 bloc au choix par jeu",
+                  "Échange [passif] le marchand peut échanger n’importe quel deux blocs ou composantes pour un autre type de bloc ou une composante magique",
+                  "Contrebande [passif] chaque jeu, le joueur peut participé à une enchère avant le jeu avec les autres escrocs pour des objets prédéfinies",
+                  "Caravane [passif] génère 100 pièces par jeu",
+                  "Noblesse [passif] génère 50 pièces par jeu"
+                ]
+              ]
+            },
+            {
+              "title": "Médecine [c]",
+              "description": [
+                [
+                  "Techniques médicales [passif] permet d’apprendre les techniques de médecine avancées. Chacun doit être apprise en jeu lors d’un séminaire donné par un acteur.",
+                  [
+                    "Diagnostic [Stravinsky] Permet à un joueur ayant l’habileté médecine de faire un diagnostique complet d’un patient en passant 15 minutes avec lui. Après la session, le joueur doit révéler au médecin l’ensemble des effets qui pèsent sur lui, incluant tous les effets passifs qui lui sont conférés par des objets ou des techniques. Si le joueur est ignorant d’une condition pesant sur lui, le docteur considère qu’il ne l’a simplement pas découverte. Un diagnostique ne peut pas être perpétrer sur une personne contre son gré.",
+                    "Psychanalyse [Stravinsky] Un patient ayant fait ses consultations régulières pour 3 jeux consécutifs est assez près de son médecin pour recevoir ses conseils psychologiques. Chaque jeu, le médecin peut poser une question à son patient qui doit lui répondre la vérité. Le médecin infère cette information des discussions et observations sur son patient, l’habileté mensonge n’est donc pas efficace.",
+                    "Autopsie [Stravinsky] permet de déterminer la cause de la mort d’un joueur"
+                  ],
+                  "Techniques chirurgicales [passif] permet d’apprendre les techniques de chirurgie avancées. Chacune doit être apprise en jeu lors d’un séminaire donné par un acteur.",
+                  [
+                    "Amputation [Von Brett] le médecin peut retirer un membre d’un joueur mort ou assommé de façon propre et professionnelle. Si le docteur retire un bras, la cible ne peut plus se servir de ce bras avant d’être guérit magiquement (guérison est efficace)",
+                    "Ablation [Von Brett] permet de retirer un organe à un joueur mort ou assommé. Un joueur assommé meurt à la fin de la procédure. Quand le joueur revient à la vie, il a une pnalité d’un d’énergie jusqu’à ce qu’il prenne un remède.",
+                    "Transfusion [Von Brett] permet de faire une transfusion sanguine entre deux joueurs. Les potions, poisons et maladie qui affecte le joueur donateur sont transmises au joueur receveur. Toute potion ou remède administré 5 minutes avant la transfusion prend effet dans le corps receveur aussi."
+                  ],
+                  "Recherche pharmacologique [passif] le joueur apprend les recettes avancée de médicaments",
+                  "Dextérité [passif] réduit le temps d’opération et suture de 10 secondes"
+                ]
+              ]
+            },
+            {
+              "title": "Métier [c]",
+              "description": [
+                [
+                  "Artisan versatile [passif] permet d’utiliser un bloc de forge comme un bloc d’artisanat, et inversement",
+                  "Forgeron prolifique [passif] +3 blocs de forge",
+                  "Artisan prolifique [passif] +3 blocs artisanaux",
+                  "Herboriste prolifique [passif] +3 blocs d’herboristerie"
+                ]
               ]
             }
           ]

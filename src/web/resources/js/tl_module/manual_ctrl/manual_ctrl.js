@@ -59,6 +59,7 @@ characterApp.controller("manual_ctrl", ["$scope", "$q", "$http", "$window", /*"$
   };
 
   $scope.formatHtmlDescription = function (desc) {
+    // todo can use recursivity to simplify html creation
     // format html from string or array
     var response;
     if (Object.prototype.toString.call(desc) === '[object Array]') {
@@ -75,7 +76,18 @@ characterApp.controller("manual_ctrl", ["$scope", "$q", "$http", "$window", /*"$
           var arrayLength_2 = desc_item.length;
           response += "<ul>";
           for (var j = 0; j < arrayLength_2; j++) {
-            response += "<li>" + desc_item[j] + "</li>";
+            var bullet_item = desc_item[j];
+            if (Object.prototype.toString.call(bullet_item) === '[object Array]') {
+              response += "<ul>";
+              // array in bullet is bullet level 2
+              var arrayLength_3 = bullet_item.length;
+              for (var k = 0; k < arrayLength_3; k++) {
+                response += "<li>" + bullet_item[k] + "</li>";
+              }
+              response += "</ul>";
+            } else {
+              response += "<li>" + bullet_item + "</li>";
+            }
           }
           response += "</ul>";
         }
