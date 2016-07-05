@@ -792,34 +792,359 @@
                   "6 - 7 composantes: filet avec effet sur capture",
                   [
                     "Aveugle",
-                    "Foudroyé;",
+                    "Foudroyé",
                     "Désarmé."
                   ],
                   "8 - 9 composantes: filet avec effet sur capture",
                   [
-                    "Calme;",
-                    "Caché;",
+                    "Calme",
+                    "Caché",
                     "Muet."
                   ],
                   "10 - 11 composantes:",
                   [
                     "Dominé (note: la cible est paralysée, mais peut marcher)",
-                    "Assommé;",
+                    "Assommé",
                     "Immatérielle."
                   ],
                   "12 à 15 composantes: Filet avec une capacité extraordinaire",
                   [
-                    "Affecte l’immatériel;",
-                    "Donne une nécrose sur capture;",
-                    "Drain complet de l’énergie;",
+                    "Affecte l’immatériel",
+                    "Donne une nécrose sur capture",
+                    "Drain complet de l’énergie",
                     "Animation [consommable] un cadavre se lève en goule sous votre contrôle (10PV, aucune énergie)"
                   ],
                   "16 à 30 composantes: objets économiques et scénario",
                   [
-                    "Filet de pêche: génère [composantes/10] rations par jeu;",
-                    "Filet d’esclavagiste: génère [composantes/15] esclaves par jeu;",
-                    "Attrapeur de rêves: génère [composantes/10] blocs d’enchantement par jeu;"
+                    "Filet de pêche: génère [composantes/10] rations par jeu",
+                    "Filet d’esclavagiste: génère [composantes/15] esclaves par jeu",
+                    "Attrapeur de rêves: génère [composantes/10] blocs d’enchantement par jeu"
                   ]
+                ]
+              ]
+            },
+            {
+              "title": "Corde",
+              "description": [
+                [
+                  "6 - 7 composantes: corde avec effet sur capture",
+                  [
+                    "Aveugle",
+                    "Foudroyé",
+                    "Désarmé"
+                  ],
+                  "8 - 9 composantes: corde avec effet sur capture",
+                  [
+                    "Calme",
+                    "Caché",
+                    "Muet"
+                  ],
+                  "10 - 11 composantes: corde avec effet sur capture",
+                  [
+                    "Dominé (note: la cible est paralysée, mais peut marcher)",
+                    "Assommé",
+                    "Immatérielle."
+                  ],
+                  "12 à 15 composantes: Filet avec une capacité extraordinaire",
+                  [
+                    "Affecte l’immatériel",
+                    "Donne une nécrose sur capture",
+                    "Drain complet de l’énergie"
+                  ],
+                  "16 à 30 composantes: objets économiques et scénario",
+                  [
+                    "Corde du pendu: permet de tuer de façon permanente un joueur accusé dans une cours de justice légitime",
+                    "Collet: génère [composante/10] rations par jeu",
+                    "Corde infinie: génère [composantes/10] blocs artisanaux par jeu."
+                  ]
+                ]
+              ]
+            },
+            {
+              "title": "Fortification",
+              "description": [
+                "<small>(Fortification : redonne un point de vie à une forteresse. Une forteresse peut avoir jusqu’à 5 points de vie, mais commence le jeu avec 3.)</small>",
+                [
+                  "6 - 7 composantes: effet à usage unique affectant tous le monde à l’intérieur d’un bâtiment",
+                  [
+                    "Guérison 2",
+                    "Regain d’énergie 1",
+                    "Dégât 1",
+                    "drain d’énergie 1."
+                  ],
+                  "8 - 9 composantes: effet à usage unique affectant tous le monde à l’intérieur d’une enceinte",
+                  [
+                    "Guérison 2",
+                    "Regain d’énergie 1",
+                    "Dégât 1",
+                    "drain d’énergie 1."
+                  ],
+                  "10 - 11 composantes: effet à usage unique affectant tous le monde à l’intérieur d’un bâtiment",
+                  [
+                    "Réanimation",
+                    "Résurrection",
+                    "Foudroyé;,",
+                    "Nécrose"
+                  ],
+                  "12 - 13 composantes: effet à usage unique affectant tous le monde à l’intérieur d’une enceinte",
+                  [
+                    "Réanimation",
+                    "Résurrection",
+                    "Foudroyé",
+                    "Nécrose"
+                  ],
+                  "14 - 15 composantes: effet permanent affectant tous le monde prenant un repos dans le bâtiment",
+                  [
+                    "énergie maximum. Perdure jusqu’à utilisation",
+                    "Répare l’armure (ne fonctionne pas sur les rituels d’armure)",
+                    "+1 point de vie maximum. Perdure jusqu’à ce que perdu",
+                    "Nécrose"
+                  ],
+                  "16 - 17 composantes: effet permanent affectant tous le monde prenant un repos dans l’enceinte",
+                  [
+                    "Répare l’armure (ne fonctionne pas sur les rituels d’armure)",
+                    "+1 point de vie maximum. Perdure jusqu’à ce que perdu",
+                    "Nécrose"
+                  ],
+                  "18 - 19 composantes: effet permanent affectant tous le monde prenant un repos dans le bâtiment",
+                  [
+                    "+1 énergie maximum. Perdure jusqu’à utilisation",
+                    "-1 karma",
+                    "Répare une armure rituelle."
+                  ],
+                  "20 - 30 composantes: transformation d’un bâtiment en commerce de niveau [(composantes - 15)/5]",
+                  [
+                    "Distillerie",
+                    "Forge",
+                    "Atelier",
+                    "Cercle runique",
+                    "Laboratoire",
+                    "Pharmacie."
+                  ]
+                ],
+                "*un bâtiment est une construction qui dispose d’un toi, de quatre murs et d’un plancher",
+                "**une enceinte est une construction qui est ceinturé d’un mur, mais qui n’a pas nécessairement un toit. L’organisation peut désigner tout lieu comme étant réputé être une enceinte.",
+                "Par exemple: l’arène."
+              ]
+            },
+            {
+              "title": "Piège",
+              "description": [
+                "<small>(Piège: corde avec une clochette. Inflige 2 de dégât à qui touche la corde quand la clochette sonne)</small>",
+                [
+                  "6 - 7 composantes: piège avec effet additionnel sur déclenchement (l’effet est sur un papier sur la corde)",
+                  [
+                    "Désarmé",
+                    "Foudroyé",
+                    "Muet"
+                  ],
+                  "8 - 9 composantes: piège avec effet additionnel sur déclenchement (l’effet est sur un papier sur la corde)",
+                  [
+                    "Démembré",
+                    "Peur",
+                    "Aveugle"
+                  ],
+                  "10 - 11 composantes: piège avec effet additionnel sur déclenchement (l’effet est sur un papier sur la corde)",
+                  [
+                    "Enragé",
+                    "Calme",
+                    "Cassé"
+                  ],
+                  "12 - 15 composantes: piège avec effet additionnel sur déclenchement (l’effet est sur un papier sur la corde)",
+                  [
+                    "Assommé",
+                    "Paralysé (5 minutes)",
+                    "Nécrose"
+                  ],
+                  "16 - 20 composantes: Pièges avec faculté extraordinaire",
+                  [
+                    "Ne peut être désarmé",
+                    "Inflige 4 de dégât",
+                    "Affecte l’éthéré seulement (le piège est alors représenté par un laser)"
+                  ],
+                  "21 à 30 composantes: Pièges à usage économique ou alternatif.",
+                  [
+                    "Fausse d’esclavagiste: génère [composantes/15] esclaves par jeu;",
+                    "Piège de poche: si un token de vol à la tire est inséré dans la même poche que le piège, l’initiateur du vol à la tir tombe assommé",
+                    "Contingence: permet de lier l’activation d’un rituel à un mot ou un geste."
+                  ]
+                ]
+              ]
+            },
+            {
+              "title": "Forgeron",
+              "description": [
+                "Cette sous-école rassemble les rituels affectant tous les objets de métal. Elle comprend également les rituels touchant à l’or, l’argent et les métaux spéciaux. La magie des bijoux provient généralement de cette sous-école.",
+                [
+                  "Armures"
+                ],
+                [
+                  "(Armure : permet au forgeron de réparer une armure en combat en 15 secondes.)",
+                  "6 - 18 composantes: effet permanent sur le porteur (c = nombre de composantes)",
+                  [
+                    "+[c/6]karma au début du jeu",
+                    "-[c/6]karma au début du jeu",
+                    "+[c/6] points de vie (entre 6 et 9, +0)",
+                    "+[c/6] énergie maximum (entre 6 et 9, +0);",
+                    "+[c/6] nécroses;",
+                    "-[c/6] énergie maximum;"
+                  ],
+                  "19 - 20 composantes: protège contre certains assauts",
+                  [
+                    "Protection contre la possession",
+                    "Protection contre les attaques venant de l’immatériel",
+                    "Protection contre la perte d’objet quand le joueur devient immatériel"
+                  ],
+                  "21 - 30 composantes: armure à signification scénario",
+                  [
+                    "Protection contre le psychisme",
+                    "Protection contre un environnement hostile:"
+                  ],
+                  [
+                    "Zone de l’enfer:",
+                    [
+                      "Abadon",
+                      "Nirvana",
+                      "Néposd"
+                    ],
+                    "Plan élémentaire (eau, terre air ou feu):",
+                    [
+                      "Cosmos",
+                      "Néant."
+                    ],
+                    "Protection contre les assauts cosmiques."
+                  ]
+                ]
+              ]
+            },
+            {
+              "title": "Armes",
+              "description": [
+                [
+                  "(Arme : remplace une arme cassée)"
+                ],
+                [
+                  "6 - 7 composantes: imite une technique gratuitement, une fois par combat",
+                  [
+                    "Attaque sournoise",
+                    "Jambette",
+                    "Désarmement"
+                  ],
+                  "8 - 9 composantes: imite une technique gratuitement, une fois par combat",
+                  [
+                    "Assaut",
+                    "Coupe-jarret;",
+                    "Stylet"
+                  ],
+                  "10 - 11 composantes: donne accès à une technique, utilisant l’énergie du porteur",
+                  [
+                    "Attaque sournoise",
+                    "Jambette",
+                    "Désarmement"
+                  ],
+                  "12 - 13 composantes: donne accès à une technique, utilisant l’énergie du porteur",
+                  [
+                    "Assaut",
+                    "Coupe-jarret",
+                    "Stylet"
+                  ],
+                  "14 - 15 composantes: imite une technique gratuitement, une fois par combat (inclue la toxine)",
+                  [
+                    "Aveuglement",
+                    "Coup bas",
+                    "Coup sonnant."
+                  ],
+                  "16 - 20 composantes: l’arme inflige 1 de dégât additionnel sur un type de créature.",
+                  [
+                    "Mort-vivant",
+                    "Naturel (trucs druidiques)",
+                    "Nature corrompue (Natueur et cie)",
+                    "Démons",
+                    "Gardiens",
+                    "Anges."
+                  ],
+                  "21 - 30 composantes: Armes à effet sur une touche. Utilisable l’énergie du joueur jusqu’à un maximum de [1+((c-20)/5)] fois par combat.",
+                  [
+                    "Nécrose",
+                    "Drain 1 (inflige 1 de dégât et regagne 1 point de vie)",
+                    "-1 énergie sur la cible",
+                    "Peur",
+                    "Calme."
+                  ]
+                ]
+              ]
+            },
+            {
+              "title": "Bouclier",
+              "description": [
+                [
+                  "(Bouclier : remplace un bouclier cassé;)"
+                ],
+                "6 - 7 composantes: imite une technique gratuitement, une fois par combat",
+                [
+                  "Esquive",
+                  "Déflexion",
+                  "Déviation"
+                ],
+                "8 - 9 composantes: imite une technique gratuitement, une fois par combat",
+                [
+                  "Santé",
+                  "Second-souffle",
+                  "Verbomoteur"
+                ],
+                "10 - 11 composantes: donne accès à une technique, utilisant l’énergie du porteur",
+                [
+                  "Esquive",
+                  "Déflexion",
+                  "Déviation"
+                ],
+                "12 - 13 composantes: donne accès à une technique, utilisant l’énergie du porteur",
+                [
+                  "Santé",
+                  "Second-souffle",
+                  "Verbomoteur"
+                ],
+                "14 - 15 composantes: le bouclier prend la forme d’un bijou. Donne accès une technique, utilisant l’énergie du porteur. ",
+                [
+                  "Mensonge",
+                  "Évasion",
+                  "Dissimulation",
+                  "Camouflage"
+                ],
+                "16 - 20 composantes: Sauvegarde les rituels provenant d’une école de rituel, au coût d’un d’énergie.",
+                [
+                  "Protection",
+                  "Création",
+                  "Nécromancie",
+                  "Démonologie",
+                  "Élémentaire",
+                  "Naturel."
+                ],
+                "21 - 30 composantes: sauvegarde contre les mécaniques de combat et scénario d’une nature.",
+                [
+                  "École rituel précise",
+                  "Pouvoir de source infernal",
+                  "Pouvoir de source divine",
+                  "Pouvoir de source cosmique",
+                  "Pouvoir de source druidique",
+                  "Pouvoir de source naturelle corrompue"
+                ]
+              ]
+            },
+            {
+              "title": "Cadenas",
+              "description": [
+                "(Cadenas et clef : empêche l’ouverture d’un coffre sans la clef)",
+                "Un cadenas magique ne peut -être ouvert que par un mot de commande écrit dans une enveloppe dans le coffre qu’il sert à barrer. Pour crocheter le cadenas, il faut d’abord briser l’enchantement. Un mage avec infusion et disjonction doit ramasser un nombre de composantes égal au nombre cumulé pour faire le cadenas et faire un rituel cumulant autant de points de protocole.",
+                "Le cadenas redevient alors normal, et peut être crocheté. Le nombre de composantes investit dans le rituel de création du cadenas doit être clairement indiqué sur la représentation du cadenas. Dès qu’un cadenas magique est créé, la mécanique pour les briser doit faire partie du speech de départ. Le Poste de Traite informe aussi les voleurs curieux de la procédure."
+              ]
+            },
+            {
+              "title": "Engin de siège",
+              "description": [
+                "(Engin de siège : inflige 1 de dégât à une fortification. Une personne touchée par un projectile d’engin de siège est morte.)",
+                [
+                  "Inflige 1+[c/6] dégât à une fortification (entre 2 et 6). Cumulable avec l’effet d’un enchantement."
                 ]
               ]
             }
@@ -1503,7 +1828,7 @@
                     ],
                     "*(Prérequis)Forme Vegetale ou Fongique"
                   ],
-                  "title": "Armure végétale*"
+                  "title": "Armure végétale"
                 },
                 {
                   "description": [
