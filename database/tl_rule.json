@@ -2460,6 +2460,150 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Autre",
+      "section": [
+        {
+          "title": "Joyaux",
+          "description": [
+            "(Joyau : effets scénario divers. Limite de 3 joyaux par personnage dans un même jeu)",
+            [
+              "6 - 7 composantes: effet sur le porteur, instantané, une fois par jeu.",
+              [
+                "+1 karma",
+                "Guérison 2",
+                "Regain de 2 d’énergie"
+              ],
+              "8 - 9 composantes: effets économique mineur",
+              [
+                "Génère 1 bloc par jeu",
+                "Génère 10 pièces par jeu",
+                "Génère 1 composante par jeu"
+              ],
+              "10 - 11 composantes: effet au touché, instantané, une fois par jeu.",
+              [
+                "Muet",
+                "Aveugle",
+                "Démembré."
+              ],
+              "12 - 13 composantes: technique octroyée au porteur",
+              [
+                "Mensonge",
+                "Résilience",
+                "Loyauté"
+              ],
+              "14 - 15 composantes: effet permanent sur le porteur",
+              [
+                "Protection contre l’animation",
+                "Protection contre la possession",
+                "+2 points de vie quand ne porte pas d’armure"
+              ],
+              "16 - 30 composantes: effet économique majeur",
+              [
+                "Génère [c/10] blocs, au choix, par jeu",
+                "Génère 1 + [c/10] composantes par jeu",
+                "Génère [c/10] pierres d’âme par jeu;",
+                "Génère [c/5] pierres de sanglite par jeu",
+                "Génère [c/5] pierres de bluame par jeu",
+                "Génère [c/5] pierres de malachite par jeu"
+              ]
+            ]
+          ]
+        },
+        {
+          "title": "Mélanges et Liquides",
+          "description": [
+            "Cette sous-école correspond aux habiletés d’alchimie, herboristerie et concoctions de potion. Les rituels à base d’un objet d'alchimie crée des maladies. Les rituels à base d’herboristerie crée des antidotes et des remèdes aux maladies magiques. Les rituels a base de potion sont quand à eux varié, certain permettent d'améliorer une potion a des niveaux de magie hallucinante d’autre de provoquer des effets spectaculaires et unique."
+          ],
+          "section": [
+            {
+              "title": "Alchimie",
+              "description": [
+                "(Ressources : champignon, venin ou plante. Poison: réduit de 2 l’énergie. Toxine: foudroie, Venin: ajoute 1 de dégât.)",
+                "Légende :",
+                [
+                  "[Sang] Transmise quand on touche le joueur assommé ou mort.",
+                  "[Air] Transmise le joueur touche à main nue la peau d’un autre joueur.",
+                  "[Salive] Transmise quand un joueur partage de la nourriture ou un breuvage.",
+                  "[Famine] Un joueur est infecté pour chaque point en carence alimentaire dans la géopolitique (selon leur faction).",
+                  "[6] Peste commune: [sang] 1 nécrose inopérable.",
+                  "[6] Spore parasite: [air] - 2 à l’énergie.",
+                  "[6] Grippe: [air] -2 au karma.",
+                  "[8] Peste noire: [sang] 2 nécroses inopérables.",
+                  "[8] Spore débilitant: [salive] -4 à l’énergie.",
+                  "[8] Choléra: [salive] -4 au karma.",
+                  "[10] Peste Figaro: [sang] 3 nécroses inopérables.",
+                  "[10] Démence: [famine] -6 à l’énergie.",
+                  "[10] Malédiction: [famine] -6 au karma.",
+                  "[15] Virus de Valcenne: [air] 1 nécrose inopérable, -2 à l’énergie et au karma.",
+                  "[15] Bactérie cannibale: [sang] 2 nécroses inopérables et -4 au karma.",
+                  "[15] Décomposition nerveuse: [famine] 2 nécroses inopérables et -4 à l’énergie.",
+                  "[15] Dépression: [famine] -4 karma et énergie.",
+                  "[20] Lèpre: [sang] 2 nécroses inopérables, -4 à l’énergie et au karma.",
+                  "[20] Cancer: [famine] 3 nécroses inopérables et -6 au karma.",
+                  "[20] Bactérie nervophage: [salive] 3 nécroses inopérables et -6 à l’énergie.",
+                  "[20] Nécrose de l’âme: [famine] -6 à l’énergie et au karma.",
+                  "[30] Vengeance de Finosia: [sang] 3 nécroses inopérables, -6 au karma et à l’énergie.",
+                  "[30] Drain de l’âme: [famine] Ne peut pas utiliser de techniques."
+                ]
+              ]
+            },
+            {
+              "title": "Herboristerie",
+              "description": [
+                "(Ressources : calmant, stimulant et contrepoison. Baume : guérit 2 points de vie. Injection : guérit assommé. Antidote : contrepoison.)",
+                "Les rituels avec les médicaments permettent de guérir les gens des maladies créées par les rituels de création sur l’alchimie. La force doit être équivalente à celle utilisée pour créer la maladie. Le rituel crée une recette qu’un herboriste peut utiliser pour synthétiser un bloc de production en remède pour la maladie précise. Chaque fois que le rituel est répété, il est possible d’enseigner la recette à un autre herboriste.",
+                "Le rituel va toujours donner le bon remède si le joueur peut identifier la maladie et la puissance nécessaire pour la révoquer. Un joueur peut aussi essayer de transformer un remède sans connaître de maladie. À ce moment, le joueur apprend une recette au hasard capable de soigner une des maladies de la liste alchimie. Appliquer la maladie la plus près en puissance."
+              ]
+            },
+            {
+              "title": "Potions",
+              "description": [
+                "(Ressources : philtre, poudre et essence. Fortitude: une sauvegarde poison. Guérison : guérit 1 pv. Sagesse : redonne 2 d’énergie.)",
+                "Les potions utilisées en rituel de création permettent de bénir un certain nombre de participants pour la durée du jeu, à moins d’avertissement contraire. Les avantages ne peuvent pas surpasser les maximums établis du système. Certains rituels font effet dès qu’ils sont terminer, d’autre permette de garder l’effet en bouteille.",
+                "Légende:",
+                [
+                  "[bénédiction] L’effet du rituel est instantané et affect le nombre de joueur inscrit dans la description.",
+                  "[bouteille] Le rituel se conserve en bouteille et doit être bu pour faire effet.",
+                  "[6] Nuit liquide: [bouteille] Usage unique. Une fois lancé au sol la fiole libère un nuage de noirceur qui aveugle toute les cible dans un rayon de 5 pas de la bouteille. (Utiliser une bouteille incassable)",
+                  "[6] Bénédiction I: [bénédiction] +1 point de vie pour 3 personnes.",
+                  "Méditation I: [bénédiction] +1 énergie pour 3 personnes.",
+                  "[6] Prière I: [bénédiction] +2 karma pour 3 personnes.",
+                  "[8] Bénédiction I: [bénédiction] +1 point de vie pour 6 personnes.",
+                  "[8] Méditation I: [bénédiction] +1 énergie pour 6 personnes.",
+                  "[8] Prière I: [bénédiction] +2 karma pour 6 personnes.",
+                  "[10] Bénédiction I: [bénédiction] +1 point de vie pour 9 personnes.",
+                  "[10] Méditation I: [bénédiction] +1 énergie pour 9 personnes.",
+                  "[10] Prière I: [bénédiction] +2 karma pour 9 personnes.",
+                  "[15] Bénédiction II: [bénédiction] +2 points de vie pour 3 personnes.",
+                  "[15] Méditation II: [bénédiction] +2 énergie pour 3 personnes.",
+                  "[15] Prière II: [bénédiction] +4 karma pour 3 personnes.",
+                  "[20] Bénédiction II: [bénédiction] +2 points de vie pour 6 personnes.",
+                  "[20] Méditation II: [bénédiction] +2 énergie pour 6 personnes.",
+                  "[20] Prière II: [bénédiction] +4 karma pour 6 personnes.",
+                  "[25] Bénédiction II: [bénédiction] +2 points de vie pour 9 personnes.",
+                  "[25] Méditation II: [bénédiction] +2 énergie pour 9 personnes.",
+                  "[25] Prière II: [bénédiction] +4 karma pour 9 personnes.",
+                  "[20] Bénédiction III: [bénédiction] +3 points de vie pour 3 personnes.",
+                  "[20] Méditation III: [bénédiction] +3 énergie pour 3 personnes.",
+                  "[20] Prière III: [bénédiction] +6 karma pour 3 personnes.",
+                  "[30] Bénédiction III: [bénédiction] +3 points de vie pour 6 personnes.",
+                  "[30] Méditation III: [bénédiction] +3 énergie pour 6 personnes.",
+                  "[30] Prière III: [bénédiction] +6 karma pour 6 personnes.",
+                  "[40] Bénédiction III: [bénédiction] +3 points de vie pour 9 personnes.",
+                  "[40] Méditation III: [bénédiction] +3 énergie pour 9 personnes.",
+                  "[40] Prière III: [bénédiction] +6 karma pour 9 personnes.",
+                  "[30] Gloire: [bénédiction] +1 point de vie, +1 d’énergie et +2 karma pour tous les participants.",
+                  "[30] Pouvoir de Brokrand: [bénédiction] +2 points de vie et +2 d’énergie pour tous les participants.",
+                  "[30] Lumière d’Eccani: [bénédiction] +2 d’énergie et +4 karma pour tous les participants.",
+                  "[30] Force de Nox: [bénédiction] +2 points de vie et +4 karma pour tous les participants."
+                ]
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
